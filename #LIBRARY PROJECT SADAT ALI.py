@@ -1,6 +1,9 @@
-#LIBRARY PROJECT/ SADAT ALI/ FA23-BCT-034
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run #LIBRARY PROJECT/ SADAT ALI/ FA23-BCT-034
+#library inventry
+LIBRARY=[["A COLD HEART","JHON","1963","STATUS:AVAILABLE"],["A DEATH","WILLIAM","1962","STATUS:CHECKED OUT"]]
 #function to add books
-def add_book(LIBRARY):
+def add_book():
  print("ENTER THE DETAILS OF BOOK YOU WANT TO ADD :")
  BOOK=[]
  BOOK.insert(0,input("ENTER THE TITLE OF THE BOOK:"))
@@ -8,20 +11,20 @@ def add_book(LIBRARY):
  BOOK.insert(2,input("ENTER THE PUBLICATION YEAR OF THE BOOK:"))
  BOOK.insert(3,"STATUS:AVAILABLE")
  print("YOUR HAS BEEN ADDED TO LIBRARY")
- LIBRARY.extend(BOOK)
+ LIBRARY.append(BOOK)
  return LIBRARY
 #function to show the content of library
-def display_library(LIBRARY):
+def display_library():
     #for x in LIBRARY:
       print(LIBRARY)
  
 #BOOK COUNTING
-def count_books(LIBRARY):
+def count_books():
   print("THE NUMBER OF BOOKS IN LIBRARY IS :")
   print(len(LIBRARY)) 
 
 #BOOK SEARCH FUNCTION
-def search_books(LIBRARY):
+def search_books():
   KW=input("ENTER THE KEYWORD OR INFORMATION ABOUT THE BOOK")
   for i in range(len(LIBRARY)):
     y=LIBRARY[i]
@@ -32,7 +35,7 @@ def search_books(LIBRARY):
         print(y)
         
 #Rrturning book function
-def return_book(LIBRARY):
+def return_book():
   KW=input("ENTER THE TITLE OR AUTHER OR PUB.YEAR OF THE BOOK YOU WANT TO RETURN:")
   for i in range(len(LIBRARY)):
     y=LIBRARY[i]
@@ -44,7 +47,7 @@ def return_book(LIBRARY):
   return LIBRARY
 
 #checking out book function
-def check_out_book(LIBRARY):
+def check_out_book():
   KW=input("ENTER THE TITLE OR AUTHER OR PUB.YEAR OF THE BOOK YOU WANT TO CHECK OUT:")
   for i in range(len(LIBRARY)):
     y=LIBRARY[i]
@@ -59,10 +62,10 @@ def check_out_book(LIBRARY):
   return LIBRARY
 def main():    
 #BOOK INVENTRY
- LIBRARY=[]
+ #LIBRARY=[]
  # for testing
 #we are entering data in library list to check the working of program
- LIBRARY=[["A COLD HEART","JHON","1963","STATUS:AVAILABLE"],["A DEATH","WILLIAM","1962","STATUS:CHECKED OUT"]]
+ 
  print("WELCOME TO THE LIBRARY") 
  print('''                              ...HERE IS THE MANUE ...
        
@@ -75,41 +78,22 @@ def main():
        ''')
  num = input("ENTER THE  RESPECTED NUMBER OF FUNCTION YOU WANT TO PERFORM (1_6)")
  if num =="1":
-  LIBRARY = add_book(LIBRARY)
-  print("DO YOU WANT TO GO BACK TO MANUE ")
-  n=input("ENTER 0 FOR YES AND 1 FOR NO....")
-  if n=="0" :
-    main()
+   add_book()
  if num ==  "2":
-  LIBRARY = display_library(LIBRARY)
-  print("DO YOU WANT TO GO BACK TO MANUE ")
-  n=input("ENTER 0 FOR YES AND 1 FOR NO....")
-  if n=="0" :
-    main()
+   display_library()
+   
  if num == "3" :
-  LIBRARY = count_books(LIBRARY)
-  print("DO YOU WANT TO GO BACK TO MANUE ")
-  n=input("ENTER 0 FOR YES AND 1 FOR NO....")
-  if n=="0" :
-    main()
+   count_books()
+   
  if num == "4" :
-  LIBRARY = search_books(LIBRARY)
-  print("DO YOU WANT TO GO BACK TO MANUE ")
-  n=input("ENTER 0 FOR YES AND 1 FOR NO....")
-  if n=="0" :
-    main()
+  search_books()
+  
  if num =="5":
-  LIBRARY = check_out_book(LIBRARY)
-  print("DO YOU WANT TO GO BACK TO MANUE ")
-  n=input("ENTER 0 FOR YES AND 1 FOR NO....")
-  if n=="0" :
-    main()
+  check_out_book()
+ 
  if num == "6" :
-  LIBRARY = return_book(LIBRARY)
-  print("DO YOU WANT TO GO BACK TO MANUE ")
-  n=input("ENTER 0 FOR YES AND 1 FOR NO....")
-  if n=="0" :
-    main()
+  LIBRARY = return_book()
+
 #statements to repeat main TO DO ANOTHER FUNCTION if user wants to do
 n="0"
 while n=="0" :
