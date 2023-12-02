@@ -9,7 +9,7 @@ def add_book():
  BOOK.insert(0,input("ENTER THE TITLE OF THE BOOK:"))
  BOOK.insert(1,input("ENTER THE NAME OF AUTHOR :"))
  BOOK.insert(2,input("ENTER THE PUBLICATION YEAR OF THE BOOK:"))
- BOOK.insert(3,"STATUS:AVAILABLE")
+ BOOK.insert(3,["STATUS:AVAILABLE"])
  print("YOUR HAS BEEN ADDED TO LIBRARY")
  LIBRARY.append(BOOK)
  return LIBRARY
