@@ -1,5 +1,5 @@
 # Online Python compiler (interpreter) to run Python online.
-# Write Python 3 code in this online editor and run #LIBRARY PROJECT/ SADAT ALI/ FA23-BCT-034
+# Write Python 3 code in this online editor and run #LIBRARY PROJECT/ SADAT AL
 #library inventry
 LIBRARY=[["A COLD HEART","JHON","1963","STATUS:AVAILABLE"],["A DEATH","WILLIAM","1962","STATUS:CHECKED OUT"]]
 #function to add books
