@@ -4,19 +4,21 @@ Welcome to the Library Management System!
 
 This project is a simple Python program designed to manage a library's inventory. It allows users to add, display, count, search, check out, and return books.
 
-**Features
-**
+**Features**
+
 Add a new book to the library
 Display the entire library and its contents
 Count the number of books in the library
 Search for a book by title, author, or publication year
 Check out a book (marks it as "CHECKED OUT")
 Return a book (marks it as "AVAILABLE")
+
 **Getting Started**
 
 Clone this repository to your local machine.
 Run the main() function to start the program.
 Follow the prompts to perform one of the available actions.
+
 **Note**
 
 The program uses a simple text-based interface. Enter your choices by typing the corresponding number.
@@ -26,8 +28,8 @@ Credits
 
 This project was created by Sadat Ali.
 
-**Future Development
-**
+**Future Development**
+
 This is a basic implementation, and there are many ways to improve it. Some potential features to consider adding include:
 
 User authentication and authorization
